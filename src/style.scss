@@ -1,0 +1,174 @@
+html {
+  height: 100%;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  height: 100vh;
+  div#root{
+    width: 100%;
+    background: #0F2027;
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  }
+}
+#home{
+  background: #aa4b6b;
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+}
+@font-face {
+  font-family: font1;
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/PFSquareSansPro-Bold.otf');
+}
+
+.title{
+      font-family: 'Luckiest Guy';
+      color: white;
+      font-size: 40px;
+}
+
+.logoa{
+  width: 800px;
+}
+.logob{
+  position: relative;
+  left: 500px;
+  width: 800px;
+}
+.button {
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  background-color: #222;
+  font-size: 14px;
+  font-weight: 100;
+  text-decoration: none;
+  user-select: none;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 0.1s ease-out;
+  position: fixed;
+}
+.button:hover {
+  background-color: #2CD892; /* green */
+}
+
+.columns{
+  width: 600px;
+  height: 400px;
+  color: white;
+}
+.punchline{
+  color: #ffffff;
+  height: 50%;
+  font-family: 'Luckiest Guy';
+  font-size: 25px;
+}
+.navbar-item{
+font-size: 40px;
+margin-right: 60px;
+display: inline-block;
+font-family: 'Luckiest Guy', cursive;
+color: white;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 70px;
+}
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(-360deg);}
+}
+
+.page{
+  display: flex;
+  flex-wrap: wrap;
+  display: 100%;
+  div{
+    &.voiceBtn{
+      width: 20%;
+      height: 100%;
+      color: black;
+      text-align: center;
+    }
+    &.middle{
+      width: 80%;
+      height: 700px;
+      .firstSection{
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 20px;
+        .buttons{
+          margin-left: 300px;
+          .divbutton{
+            margin-right: 40px;
+            height:100%;
+            width: 10%;
+            display: flex;
+            align-items: center;
+          }
+        }
+        .print{
+          font-size: 30px;
+          color: white;
+          font-family: 'Luckiest Guy', cursive;
+          display: flex;
+          align-items: center;
+          height:100%;
+          width:80%;
+        }
+      }
+    }
+  }
+}
+
+.sidebar {
+  height: 655px;
+  overflow-y: scroll;
+  background-color: white;
+  color: black;
+  .sidebar-item{
+    line-height: 40px;
+    text-align: center;
+    height: 50px;
+    border: 1px solid white;
+    &:hover {
+      transform: scale(.95);
+    }
+  }
+}
+
+.active {
+  background-color: grey;
+}
+
+.languageButton {
+  font-size: 25px;
+  color: darken(white, 30%);
+  font-family: 'Luckiest Guy', cursive;
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.red{
+  color: red;
+}
+
+.blue{
+  color:blue;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.black {
+  color: black;
+}
